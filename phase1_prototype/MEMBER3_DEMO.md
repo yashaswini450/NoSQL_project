@@ -4,6 +4,8 @@ Start with the black-and-white MapReduce board. Then open a terminal in this fol
 
 There is also a second board in `presentation/Member3_Demo_Flow.pdf`: a handwritten-style overview from the raw logs through Hadoop, PostgreSQL and reporting. The matching `.drawio` file is editable, and the PNG is a presentation preview. Both boards are digital drawings.
 
+For explaining the queries, use `presentation/Member3_Three_Queries.pdf`. It follows the same five illustrative records through Q1, Q2 and Q3, showing byte sums, exact distinct hosts and the error-rate denominator. These small values explain the logic; the actual benchmark and SQL reports use the complete official NASA files. Editable `.drawio` and PNG versions are included.
+
 The verified full runs processed 3,461,613 input records in seven batches; both counted 24 malformed records and produced identical query results. The measured full run took about 5.5 minutes for MongoDB and 10.7 minutes for MapReduce on this computer. Start the MapReduce run before your speaking slot, or use one complete official file for a shorter live demonstration. Keep these single-machine timings separate from general performance claims.
 
 **Say:** “My part is the MapReduce pipeline and checking that it gives the same answers as MongoDB. Hadoop launches the Python tasks and performs the shuffle, sort and reduce stages. We are demonstrating Hadoop's local runner on one machine.”

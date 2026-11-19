@@ -19,7 +19,7 @@ To recreate the prepared tmux session after a WSL restart, run `bash prepare-dem
 
 Suggested presentation sequence:
 
-Use either black-and-white board in `presentation/`. `Member3_Demo_Flow.pdf` gives the full demo flow; `Member3_MapReduce_Workflow.pdf` focuses on the MapReduce stages.
+Choose a black-and-white board in `presentation/`. `Member3_Demo_Flow.pdf` gives the full demo flow; `Member3_MapReduce_Workflow.pdf` focuses on the MapReduce stages. `Member3_Three_Queries.pdf` explains all three queries with one shared five-record illustration.
 
 1. Choose **1** for the guided tour: runtime readiness, completed MapReduce results, real SQL storage and a fresh SQL equivalence check.
 2. Choose **6** to show the actual 23 Hadoop job IDs and native counters from the completed full-data run.
