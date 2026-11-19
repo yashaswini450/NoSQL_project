@@ -1,0 +1,17 @@
+{
+  "source": "https://ita.ee.lbl.gov/traces/",
+  "files": [
+    {
+      "name": "NASA_access_log_Jul95",
+      "url": "https://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz",
+      "raw_bytes": 205242368,
+      "raw_sha256": "96551161b5bdcaacbc3c17fa108191c478fb35dfe87895c16e34a8f6552bf29a"
+    },
+    {
+      "name": "NASA_access_log_Aug95",
+      "url": "https://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz",
+      "raw_bytes": 167813770,
+      "raw_sha256": "c656a5665fcf9c8442bc9e09762de1411f1b97e7bbee65803c6738cdde4cf302"
+    }
+  ]
+}

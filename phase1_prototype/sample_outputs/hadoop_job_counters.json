@@ -1,0 +1,330 @@
+{
+  "run_id": "f9f70fa9-4c74-47be-9706-e6c47e9e670d",
+  "execution_mode": "Hadoop Streaming LocalJobRunner",
+  "jobs": [
+    {
+      "stage": "001-batch-1-parse",
+      "job_ids": [
+        "job_local400140714_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 500000,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "002-batch-1-pairs",
+      "job_ids": [
+        "job_local2096672062_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 1499999,
+        "Reduce input groups": 435285,
+        "Reduce input records": 1499999,
+        "Reduce output records": 435285,
+        "Spilled Records": 2999998
+      }
+    },
+    {
+      "stage": "003-batch-1-queries",
+      "job_ids": [
+        "job_local1606867372_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 435285,
+        "Map output records": 435285,
+        "Reduce input groups": 9609,
+        "Reduce input records": 435285,
+        "Reduce output records": 209,
+        "Spilled Records": 870570
+      }
+    },
+    {
+      "stage": "004-batch-2-parse",
+      "job_ids": [
+        "job_local998993857_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 500000,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "005-batch-2-pairs",
+      "job_ids": [
+        "job_local1000863187_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 1499999,
+        "Reduce input groups": 377233,
+        "Reduce input records": 1499999,
+        "Reduce output records": 377233,
+        "Spilled Records": 2999998
+      }
+    },
+    {
+      "stage": "006-batch-2-queries",
+      "job_ids": [
+        "job_local996246633_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 377233,
+        "Map output records": 377233,
+        "Reduce input groups": 10148,
+        "Reduce input records": 377233,
+        "Reduce output records": 208,
+        "Spilled Records": 754466
+      }
+    },
+    {
+      "stage": "007-batch-3-parse",
+      "job_ids": [
+        "job_local1186384534_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 500000,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "008-batch-3-pairs",
+      "job_ids": [
+        "job_local1237542942_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 1499987,
+        "Reduce input groups": 400633,
+        "Reduce input records": 1499987,
+        "Reduce output records": 400633,
+        "Spilled Records": 2999974
+      }
+    },
+    {
+      "stage": "009-batch-3-queries",
+      "job_ids": [
+        "job_local1032229923_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 400633,
+        "Map output records": 400633,
+        "Reduce input groups": 9538,
+        "Reduce input records": 400633,
+        "Reduce output records": 250,
+        "Spilled Records": 801266
+      }
+    },
+    {
+      "stage": "010-batch-4-parse",
+      "job_ids": [
+        "job_local144773445_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 500000,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "011-batch-4-pairs",
+      "job_ids": [
+        "job_local1059784831_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 1499999,
+        "Reduce input groups": 404544,
+        "Reduce input records": 1499999,
+        "Reduce output records": 404544,
+        "Spilled Records": 2999998
+      }
+    },
+    {
+      "stage": "012-batch-4-queries",
+      "job_ids": [
+        "job_local305981922_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 404544,
+        "Map output records": 404544,
+        "Reduce input groups": 9074,
+        "Reduce input records": 404544,
+        "Reduce output records": 297,
+        "Spilled Records": 809088
+      }
+    },
+    {
+      "stage": "013-batch-5-parse",
+      "job_ids": [
+        "job_local1467568137_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 500000,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "014-batch-5-pairs",
+      "job_ids": [
+        "job_local1174505554_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 1500005,
+        "Reduce input groups": 419356,
+        "Reduce input records": 1500005,
+        "Reduce output records": 419356,
+        "Spilled Records": 3000010
+      }
+    },
+    {
+      "stage": "015-batch-5-queries",
+      "job_ids": [
+        "job_local536391824_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 419356,
+        "Map output records": 419356,
+        "Reduce input groups": 8601,
+        "Reduce input records": 419356,
+        "Reduce output records": 316,
+        "Spilled Records": 838712
+      }
+    },
+    {
+      "stage": "016-batch-6-parse",
+      "job_ids": [
+        "job_local211644203_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 500000,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "017-batch-6-pairs",
+      "job_ids": [
+        "job_local606569661_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 500000,
+        "Map output records": 1499987,
+        "Reduce input groups": 410713,
+        "Reduce input records": 1499987,
+        "Reduce output records": 410713,
+        "Spilled Records": 2999974
+      }
+    },
+    {
+      "stage": "018-batch-6-queries",
+      "job_ids": [
+        "job_local570800296_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 410713,
+        "Map output records": 410713,
+        "Reduce input groups": 8736,
+        "Reduce input records": 410713,
+        "Reduce output records": 306,
+        "Spilled Records": 821426
+      }
+    },
+    {
+      "stage": "019-batch-7-parse",
+      "job_ids": [
+        "job_local79664360_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 461613,
+        "Map output records": 461613,
+        "Spilled Records": 0
+      }
+    },
+    {
+      "stage": "020-batch-7-pairs",
+      "job_ids": [
+        "job_local1817464347_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 461613,
+        "Map output records": 1384826,
+        "Reduce input groups": 357788,
+        "Reduce input records": 1384826,
+        "Reduce output records": 357788,
+        "Spilled Records": 2769652
+      }
+    },
+    {
+      "stage": "021-batch-7-queries",
+      "job_ids": [
+        "job_local539809731_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 357788,
+        "Map output records": 357788,
+        "Reduce input groups": 8712,
+        "Reduce input records": 357788,
+        "Reduce output records": 248,
+        "Spilled Records": 715576
+      }
+    },
+    {
+      "stage": "022-final-pairs",
+      "job_ids": [
+        "job_local745661828_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 3461613,
+        "Map output records": 10384802,
+        "Reduce input groups": 2485323,
+        "Reduce input records": 10384802,
+        "Reduce output records": 2485323,
+        "Spilled Records": 20769604
+      }
+    },
+    {
+      "stage": "023-final-queries",
+      "job_ids": [
+        "job_local2073227326_0001"
+      ],
+      "successful": true,
+      "counters": {
+        "Map input records": 2485323,
+        "Map output records": 2485323,
+        "Reduce input groups": 32901,
+        "Reduce input records": 2485323,
+        "Reduce output records": 1678,
+        "Spilled Records": 4970646
+      }
+    }
+  ]
+}

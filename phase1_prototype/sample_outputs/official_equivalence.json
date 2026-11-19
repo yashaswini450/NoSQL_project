@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "left_run": "112f5738-e752-4bc6-a7a9-2105280d9d93",
+  "right_run": "f9f70fa9-4c74-47be-9706-e6c47e9e670d",
+  "input_records": 3461613,
+  "valid_records": 3461589,
+  "malformed_records": 24,
+  "batch_size": 500000,
+  "batches_compared": 7,
+  "final_rows_compared": {
+    "q1": 288,
+    "q2": 20,
+    "q3": 1369
+  },
+  "integer_comparison": "exact",
+  "error_rate_absolute_tolerance": 1e-09
+}

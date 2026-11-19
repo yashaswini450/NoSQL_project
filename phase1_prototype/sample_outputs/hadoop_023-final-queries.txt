@@ -1,0 +1,413 @@
+[main] WARN org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[main] WARN org.apache.hadoop.metrics2.impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+[main] INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl - Scheduled Metric snapshot period at 10 second(s).
+[main] INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl - JobTracker metrics system started
+[main] WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+[main] INFO org.apache.hadoop.mapred.FileInputFormat - Total input files to process : 1
+[main] INFO org.apache.hadoop.mapreduce.JobSubmitter - number of splits:4
+[main] INFO org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_local2073227326_0001
+[main] INFO org.apache.hadoop.mapreduce.JobSubmitter - Executing with tokens: []
+[main] INFO org.apache.hadoop.mapred.LocalDistributedCacheManager - Creating symlink: /home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/hadoop-tmp/local/job_local2073227326_0001_94226bcf-936e-441b-bcac-da8025fa4124/mr_tasks.py <- /mnt/c/Users/VishalReddyK/Documents/Codex/2026-11-19/https-github-com-yashaswini450-nosql-project/outputs/nasa_phase1/mr_tasks.py
+[main] INFO org.apache.hadoop.mapred.LocalDistributedCacheManager - Localized file:/mnt/c/Users/VishalReddyK/Documents/Codex/2026-11-19/https-github-com-yashaswini450-nosql-project/outputs/nasa_phase1/nasa/mr_tasks.py as file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/hadoop-tmp/local/job_local2073227326_0001_94226bcf-936e-441b-bcac-da8025fa4124/mr_tasks.py
+[main] INFO org.apache.hadoop.mapred.LocalDistributedCacheManager - Creating symlink: /home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/hadoop-tmp/local/job_local2073227326_0001_663420bf-362d-4b55-a4b2-d0ec84690016/parser_rules.py <- /mnt/c/Users/VishalReddyK/Documents/Codex/2026-11-19/https-github-com-yashaswini450-nosql-project/outputs/nasa_phase1/parser_rules.py
+[main] INFO org.apache.hadoop.mapred.LocalDistributedCacheManager - Localized file:/mnt/c/Users/VishalReddyK/Documents/Codex/2026-11-19/https-github-com-yashaswini450-nosql-project/outputs/nasa_phase1/nasa/parser_rules.py as file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/hadoop-tmp/local/job_local2073227326_0001_663420bf-362d-4b55-a4b2-d0ec84690016/parser_rules.py
+[main] INFO org.apache.hadoop.mapreduce.Job - The url to track the job: http://localhost:8080/
+[Thread-43] INFO org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+[main] INFO org.apache.hadoop.mapreduce.Job - Running job: job_local2073227326_0001
+[Thread-43] INFO org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+[Thread-43] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[Thread-43] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[Thread-43] INFO org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local2073227326_0001_m_000000_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Processing split: file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/022-final-pairs/part-00000:0+33554432
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - numReduceTasks: 1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 33554428(134217712)
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 128
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - soft limit at 107374184
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428; length = 8388608
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - PipeMapRed exec [/usr/bin/cat]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.work.output.dir is deprecated. Instead, use mapreduce.task.output.dir
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - map.input.start is deprecated. Instead, use mapreduce.map.input.start
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - map.input.file is deprecated. Instead, use mapreduce.map.input.file
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - map.input.length is deprecated. Instead, use mapreduce.map.input.length
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - user.name is deprecated. Instead, use mapreduce.job.user.name
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-100] INFO org.apache.hadoop.streaming.PipeMapRed - Records R/W=5986/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10000/2559/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100000/98424/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=200000/195939/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=300000/298883/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=400000/394610/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=500000/497607/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=600000/590919/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-101] INFO org.apache.hadoop.streaming.PipeMapRed - MRErrorThread done
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - mapRedFinished
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - 
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Starting flush of map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Spilling map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 33554479; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428(134217712); kvend = 30897776(123591104); length = 2656653/8388608
+[main] INFO org.apache.hadoop.mapreduce.Job - Job job_local2073227326_0001 running in uber mode : false
+[main] INFO org.apache.hadoop.mapreduce.Job -  map 0% reduce 0%
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Finished spill 0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task:attempt_local2073227326_0001_m_000000_0 is done. And is in the process of committing
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Records R/W=5986/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local2073227326_0001_m_000000_0' done.
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local2073227326_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=33973690
+		FILE: Number of bytes written=35464139
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=664164
+		Map output records=664164
+		Map output bytes=33554479
+		Map output materialized bytes=34882820
+		Input split bytes=172
+		Combine input records=0
+		Spilled Records=664164
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=19
+		Total committed heap usage (bytes)=258998272
+	File Input Format Counters 
+		Bytes Read=33824768
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local2073227326_0001_m_000000_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local2073227326_0001_m_000001_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Processing split: file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/022-final-pairs/part-00000:33554432+33554432
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - numReduceTasks: 1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 33554428(134217712)
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 128
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - soft limit at 107374184
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428; length = 8388608
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - PipeMapRed exec [/usr/bin/cat]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-108] INFO org.apache.hadoop.streaming.PipeMapRed - Records R/W=2962/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10000/8570/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100000/95433/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=200000/197128/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=300000/296909/0 in:NA [rec/s] out:NA [rec/s]
+[main] INFO org.apache.hadoop.mapreduce.Job -  map 100% reduce 0%
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=400000/396634/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=500000/496286/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=600000/593176/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=700000/697400/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-109] INFO org.apache.hadoop.streaming.PipeMapRed - MRErrorThread done
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - mapRedFinished
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - 
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Starting flush of map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Spilling map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 33554400; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428(134217712); kvend = 30610348(122441392); length = 2944081/8388608
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Finished spill 0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task:attempt_local2073227326_0001_m_000001_0 is done. And is in the process of committing
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Records R/W=2962/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local2073227326_0001_m_000001_0' done.
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local2073227326_0001_m_000001_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=67803265
+		FILE: Number of bytes written=70490619
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=736021
+		Map output records=736021
+		Map output bytes=33554400
+		Map output materialized bytes=35026448
+		Input split bytes=172
+		Combine input records=0
+		Spilled Records=736021
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=258998272
+	File Input Format Counters 
+		Bytes Read=33828864
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local2073227326_0001_m_000001_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local2073227326_0001_m_000002_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Processing split: file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/022-final-pairs/part-00000:67108864+33554432
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - numReduceTasks: 1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 33554428(134217712)
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 128
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - soft limit at 107374184
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428; length = 8388608
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - PipeMapRed exec [/usr/bin/cat]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-115] INFO org.apache.hadoop.streaming.PipeMapRed - Records R/W=2859/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10000/7525/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100000/96500/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=200000/197596/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=300000/295936/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=400000/395841/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=500000/495009/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-116] INFO org.apache.hadoop.streaming.PipeMapRed - MRErrorThread done
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - mapRedFinished
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - 
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Starting flush of map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Spilling map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 33554469; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428(134217712); kvend = 31470068(125880272); length = 2084361/8388608
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Finished spill 0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task:attempt_local2073227326_0001_m_000002_0 is done. And is in the process of committing
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Records R/W=2859/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local2073227326_0001_m_000002_0' done.
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local2073227326_0001_m_000002_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=101632840
+		FILE: Number of bytes written=105087308
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=521091
+		Map output records=521091
+		Map output bytes=33554469
+		Map output materialized bytes=34596657
+		Input split bytes=172
+		Combine input records=0
+		Spilled Records=521091
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=2
+		Total committed heap usage (bytes)=258998272
+	File Input Format Counters 
+		Bytes Read=33828864
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local2073227326_0001_m_000002_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local2073227326_0001_m_000003_0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Processing split: file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/022-final-pairs/part-00000:100663296+24428517
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - numReduceTasks: 1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - (EQUATOR) 0 kvi 33554428(134217712)
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - mapreduce.task.io.sort.mb: 128
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - soft limit at 107374184
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428; length = 8388608
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - PipeMapRed exec [/usr/bin/cat]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-122] INFO org.apache.hadoop.streaming.PipeMapRed - Records R/W=2362/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10000/5392/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100000/96080/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=200000/197536/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=300000/293034/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=400000/395463/0 in:NA [rec/s] out:NA [rec/s]
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=500000/495062/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-123] INFO org.apache.hadoop.streaming.PipeMapRed - MRErrorThread done
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.streaming.PipeMapRed - mapRedFinished
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - 
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Starting flush of map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Spilling map output
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - bufstart = 0; bufend = 24428477; bufvoid = 134217728
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - kvstart = 33554428(134217712); kvend = 31298244(125192976); length = 2256185/8388608
+[main] INFO org.apache.hadoop.mapreduce.Job -  map 75% reduce 0%
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.MapTask - Finished spill 0
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task:attempt_local2073227326_0001_m_000003_0 is done. And is in the process of committing
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Records R/W=2362/1
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local2073227326_0001_m_000003_0' done.
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local2073227326_0001_m_000003_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=126256504
+		FILE: Number of bytes written=130643922
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=564047
+		Map output records=564047
+		Map output bytes=24428477
+		Map output materialized bytes=25556582
+		Input split bytes=172
+		Combine input records=0
+		Spilled Records=564047
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=258998272
+	File Input Format Counters 
+		Bytes Read=24623465
+[LocalJobRunner Map Task Executor #0] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local2073227326_0001_m_000003_0
+[Thread-43] INFO org.apache.hadoop.mapred.LocalJobRunner - map task executor complete.
+[Thread-43] INFO org.apache.hadoop.mapred.LocalJobRunner - Waiting for reduce tasks
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local2073227326_0001_r_000000_0
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - File Output Committer Algorithm version is 2
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task -  Using ResourceCalculatorProcessTree : [ ]
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.ReduceTask - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@372de078
+[pool-4-thread-1] WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - MergerManager: memoryLimit=751619264, maxSingleShuffleLimit=187904816, mergeThreshold=496068736, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+[EventFetcher for fetching Map Completion Events] INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher - attempt_local2073227326_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local2073227326_0001_m_000001_0 decomp: 35026444 len: 35026448 to MEMORY
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 35026444 bytes from map-output for attempt_local2073227326_0001_m_000001_0
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 35026444, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->35026444
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local2073227326_0001_m_000000_0 decomp: 34882816 len: 34882820 to MEMORY
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 34882816 bytes from map-output for attempt_local2073227326_0001_m_000000_0
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 34882816, inMemoryMapOutputs.size() -> 2, commitMemory -> 35026444, usedMemory ->69909260
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local2073227326_0001_m_000003_0 decomp: 25556578 len: 25556582 to MEMORY
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 25556578 bytes from map-output for attempt_local2073227326_0001_m_000003_0
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 25556578, inMemoryMapOutputs.size() -> 3, commitMemory -> 69909260, usedMemory ->95465838
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher - localfetcher#1 about to shuffle output of map attempt_local2073227326_0001_m_000002_0 decomp: 34596653 len: 34596657 to MEMORY
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput - Read 34596653 bytes from map-output for attempt_local2073227326_0001_m_000002_0
+[localfetcher#1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - closeInMemoryFile -> map-output of size: 34596653, inMemoryMapOutputs.size() -> 4, commitMemory -> 95465838, usedMemory ->130062491
+[EventFetcher for fetching Map Completion Events] INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher - EventFetcher is interrupted.. Returning
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - 4 / 4 copied.
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - finalMerge called with 4 in-memory map-outputs and 0 on-disk map-outputs
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Merging 4 sorted segments
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 4 segments left of total size: 130062332 bytes
+[main] INFO org.apache.hadoop.mapreduce.Job -  map 100% reduce 0%
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merged 4 segments, 130062491 bytes to disk to satisfy reduce memory limit
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 1 files, 130062489 bytes from disk
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl - Merging 0 segments, 0 bytes from memory into reduce
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 130062459 bytes
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - 4 / 4 copied.
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - PipeMapRed exec [/home/vishalreddyk/.local/share/nasa-phase1/venv/bin/python, mr_tasks.py, query-reduce]
+[pool-4-thread-1] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+[pool-4-thread-1] INFO org.apache.hadoop.conf.Configuration.deprecation - mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+[Thread-138] INFO org.apache.hadoop.streaming.PipeMapRed - Records R/W=5623/1
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=10000/281/0 in:NA [rec/s] out:NA [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=100000/281/0 in:NA [rec/s] out:NA [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=200000/281/0 in:NA [rec/s] out:NA [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=300000/281/0 in:300000=300000/1 [rec/s] out:281=281/1 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=400000/281/0 in:400000=400000/1 [rec/s] out:281=281/1 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=500000/281/0 in:250000=500000/2 [rec/s] out:140=281/2 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=600000/281/0 in:300000=600000/2 [rec/s] out:140=281/2 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=700000/281/0 in:350000=700000/2 [rec/s] out:140=281/2 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=800000/281/0 in:266666=800000/3 [rec/s] out:93=281/3 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=900000/281/0 in:300000=900000/3 [rec/s] out:93=281/3 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1000000/281/0 in:333333=1000000/3 [rec/s] out:93=281/3 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1100000/281/0 in:275000=1100000/4 [rec/s] out:70=281/4 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1200000/281/0 in:300000=1200000/4 [rec/s] out:70=281/4 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1300000/281/0 in:325000=1300000/4 [rec/s] out:70=281/4 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1400000/281/0 in:280000=1400000/5 [rec/s] out:56=281/5 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1500000/281/0 in:300000=1500000/5 [rec/s] out:56=281/5 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1600000/281/0 in:266666=1600000/6 [rec/s] out:46=281/6 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1700000/281/0 in:283333=1700000/6 [rec/s] out:46=281/6 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1800000/281/0 in:300000=1800000/6 [rec/s] out:46=281/6 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=1900000/281/0 in:271428=1900000/7 [rec/s] out:40=281/7 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=2000000/281/0 in:285714=2000000/7 [rec/s] out:40=281/7 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=2100000/281/0 in:300000=2100000/7 [rec/s] out:40=281/7 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=2200000/390/0 in:275000=2200000/8 [rec/s] out:48=390/8 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=2300000/762/0 in:287500=2300000/8 [rec/s] out:95=762/8 [rec/s]
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - R/W/S=2400000/1241/0 in:266666=2400000/9 [rec/s] out:137=1241/9 [rec/s]
+[Thread-138] INFO org.apache.hadoop.streaming.PipeMapRed - Records R/W=2462138/1508
+[Thread-139] INFO org.apache.hadoop.streaming.PipeMapRed - MRErrorThread done
+[pool-4-thread-1] INFO org.apache.hadoop.streaming.PipeMapRed - mapRedFinished
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Task:attempt_local2073227326_0001_r_000000_0 is done. And is in the process of committing
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - 4 / 4 copied.
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Task attempt_local2073227326_0001_r_000000_0 is allowed to commit now
+[pool-4-thread-1] INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local2073227326_0001_r_000000_0' to file:/home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/023-final-queries
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - Records R/W=2462138/1508 > reduce
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Task 'attempt_local2073227326_0001_r_000000_0' done.
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.Task - Final Counters for attempt_local2073227326_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=386381628
+		FILE: Number of bytes written=260949768
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=32901
+		Reduce shuffle bytes=130062507
+		Reduce input records=2485323
+		Reduce output records=1678
+		Spilled Records=2485323
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=7
+		Total committed heap usage (bytes)=258998272
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=243357
+[pool-4-thread-1] INFO org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local2073227326_0001_r_000000_0
+[Thread-43] INFO org.apache.hadoop.mapred.LocalJobRunner - reduce task executor complete.
+[main] INFO org.apache.hadoop.mapreduce.Job -  map 100% reduce 100%
+[main] INFO org.apache.hadoop.mapreduce.Job - Job job_local2073227326_0001 completed successfully
+[main] INFO org.apache.hadoop.mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=716047927
+		FILE: Number of bytes written=602635756
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2485323
+		Map output records=2485323
+		Map output bytes=125091825
+		Map output materialized bytes=130062507
+		Input split bytes=688
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=32901
+		Reduce shuffle bytes=130062507
+		Reduce input records=2485323
+		Reduce output records=1678
+		Spilled Records=4970646
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=34
+		Total committed heap usage (bytes)=1294991360
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=126105961
+	File Output Format Counters 
+		Bytes Written=243357
+[main] INFO org.apache.hadoop.streaming.StreamJob - Output directory: /home/vishalreddyk/.local/share/nasa-phase1/staging/f9f70fa9-4c74-47be-9706-e6c47e9e670d/023-final-queries

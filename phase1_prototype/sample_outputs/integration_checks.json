@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "native_parser_cases": 22,
+  "fixture_equivalence": {
+    "status": "PASS",
+    "left_run": "a27bcb87-367a-424d-8a07-5445df07d206",
+    "right_run": "f7c46c9c-3150-4b17-b8c4-37757e3317bd",
+    "input_records": 180,
+    "valid_records": 177,
+    "malformed_records": 3,
+    "batch_size": 91,
+    "batches_compared": 2,
+    "final_rows_compared": {
+      "q1": 3,
+      "q2": 20,
+      "q3": 2
+    },
+    "integer_comparison": "exact",
+    "error_rate_absolute_tolerance": 1e-09
+  },
+  "batch_size_invariance": {
+    "status": "PASS",
+    "left_run": "a27bcb87-367a-424d-8a07-5445df07d206",
+    "right_run": "7f85b50d-b98b-4af9-abe8-f9ca8f42171a",
+    "input_records": 180,
+    "valid_records": 177,
+    "malformed_records": 3,
+    "batch_size": "different (final-result invariance check)",
+    "batches_compared": 0,
+    "final_rows_compared": {
+      "q1": 3,
+      "q2": 20,
+      "q3": 2
+    },
+    "integer_comparison": "exact",
+    "error_rate_absolute_tolerance": 1e-09
+  },
+  "oracle": "all Q1/Q2/Q3 rows matched",
+  "empty_run": "cef801ff-1918-49dd-a22e-528491b6532f"
+}

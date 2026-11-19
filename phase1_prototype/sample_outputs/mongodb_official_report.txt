@@ -1,0 +1,75 @@
+NASA web log analytics — MONGODB
+Run: 112f5738-e752-4bc6-a7a9-2105280d9d93 | SUCCESS
+Dataset: official NASA raw logs
+Executed: 2026-11-19 16:39:06.619746+00:00 to 2026-11-19 16:44:59.912108+00:00
+ETL runtime through final SQL commit: 330.846687 seconds
+Configured batch size: 500,000 input records
+Input: 3,461,613 | valid: 3,461,589 | malformed: 24
+Non-empty batches: 7 | average batch size: 494516.142857
+Result scope: FINAL; batch ID: 7 (covers batches 1–7)
+
+Batch ID | Actual size | Valid | Malformed | Engine/query/load preparation seconds
+1 | 500000 | 499998 | 2 | 31.424889
+  Malformed reasons: {"invalid_envelope": 2}
+2 | 500000 | 499998 | 2 | 31.370370
+  Malformed reasons: {"invalid_envelope": 1, "invalid_request": 1}
+3 | 500000 | 499994 | 6 | 34.493572
+  Malformed reasons: {"invalid_envelope": 4, "invalid_request": 2}
+4 | 500000 | 499998 | 2 | 37.698356
+  Malformed reasons: {"invalid_envelope": 2}
+5 | 500000 | 500000 | 0 | 32.207310
+6 | 500000 | 499994 | 6 | 32.392638
+  Malformed reasons: {"invalid_envelope": 5, "invalid_request": 1}
+7 | 461613 | 461607 | 6 | 28.501722
+  Malformed reasons: {"invalid_envelope": 5, "invalid_request": 1}
+
+Q1 — Daily Traffic Summary (288 rows)
+log_date | status_code | request_count | total_bytes
+1995-07-01 | 200 | 58033 | 1617409574
+1995-07-01 | 302 | 2568 | 218465
+1995-07-01 | 304 | 3797 | 0
+1995-07-01 | 404 | 316 | 0
+1995-07-02 | 200 | 54492 | 1531584293
+1995-07-02 | 302 | 2370 | 195795
+1995-07-02 | 304 | 3107 | 0
+1995-07-02 | 403 | 5 | 0
+1995-07-02 | 404 | 289 | 0
+1995-07-03 | 200 | 81351 | 2085066566
+... 278 additional rows in SQL; use --rows 0 or --json for every row.
+
+Q2 — Top Requested Resources (20 rows)
+rank | resource_path | request_count | total_bytes | distinct_host_count
+1 | /images/NASA-logosmall.gif | 208717 | 131721024 | 81507
+2 | /images/KSC-logosmall.gif | 164969 | 169355844 | 85155
+3 | /images/MOSAIC-logosmall.gif | 127911 | 40592838 | 54902
+4 | /images/USA-logosmall.gif | 127077 | 25992252 | 54496
+5 | /images/WORLD-logosmall.gif | 125928 | 73792707 | 54052
+6 | /images/ksclogo-medium.gif | 121575 | 629720966 | 49489
+7 | /ksc.html | 83878 | 563459795 | 29169
+8 | /images/launch-logo.gif | 76005 | 114683637 | 42555
+9 | /history/apollo/images/apollo-logo1.gif | 68894 | 71779389 | 38403
+10 | /shuttle/countdown/ | 64722 | 255084701 | 36888
+11 | / | 63133 | 399267280 | 31756
+12 | /images/ksclogosmall.gif | 61395 | 202018760 | 38842
+13 | /shuttle/missions/missions.html | 47301 | 379380837 | 27550
+14 | /images/launchmedium.gif | 40686 | 445720212 | 24841
+15 | /htbin/cdt_main.pl | 39868 | 143954736 | 12656
+16 | /shuttle/missions/sts-69/mission-sts-69.html | 31568 | 317253063 | 18169
+17 | /shuttle/countdown/liftoff.html | 29858 | 112045194 | 14559
+18 | /icons/menu.xbm | 29189 | 13908584 | 17818
+19 | /shuttle/missions/sts-69/sts-69-patch-small.gif | 29115 | 212141819 | 18066
+20 | /icons/blank.xbm | 28851 | 13213640 | 17845
+
+Q3 — Hourly Error Analysis (1369 rows)
+log_date | log_hour | error_request_count | total_request_count | error_rate | distinct_error_hosts
+1995-07-01 | 0 | 24 | 3565 | 0.006732117812 | 12
+1995-07-01 | 1 | 10 | 3004 | 0.003328894807 | 7
+1995-07-01 | 2 | 12 | 2268 | 0.005291005291 | 9
+1995-07-01 | 3 | 16 | 1734 | 0.009227220300 | 5
+1995-07-01 | 4 | 10 | 1482 | 0.006747638327 | 8
+1995-07-01 | 5 | 9 | 1343 | 0.006701414743 | 5
+1995-07-01 | 6 | 4 | 1528 | 0.002617801047 | 3
+1995-07-01 | 7 | 2 | 1557 | 0.001284521516 | 1
+1995-07-01 | 8 | 6 | 1927 | 0.003113648158 | 4
+1995-07-01 | 9 | 3 | 2096 | 0.001431297710 | 2
+... 1359 additional rows in SQL; use --rows 0 or --json for every row.
