@@ -1,5 +1,3 @@
 __pycache__/
-*.py[cod]
-*.db
-.DS_Store
-
+*.pyc
+NASA_access_log_*
