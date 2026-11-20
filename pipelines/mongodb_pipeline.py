@@ -13,7 +13,7 @@ Per batch (inside the timed window, called by main.py):
               -> $regexFindAll tokenizer (stage 2: method / path / protocol)
        $merge -> nasa_logs_parsed   (valid docs AND malformed docs, flag `valid`)
      malformed_count = countDocuments({run_id, batch_id, valid: false})
-     staging docs of this batch are deleted (they are transient)
+     the staging collection is dropped (it only ever holds one batch)
 
 finalize() (after the last batch, over ALL batches of the run):
   Q1  $group (log_date, status_code)            -> $sum 1, $sum bytes
@@ -288,11 +288,10 @@ class MongoDBPipeline(BaseETLPipeline):
         self.client.admin.command("ping")             # fail fast if mongod is down
         self.db = self.client[self.db_name]
         # keep only the current run (previous runs' results live in PostgreSQL)
-        self.db[self.STAGING].delete_many({})
-        self.db[self.PARSED].delete_many({})
-        self.db[self.STAGING].create_index([("run_id", ASCENDING), ("batch_id", ASCENDING)])
-        self.db[self.PARSED].create_index([("run_id", ASCENDING), ("valid", ASCENDING),
-                                           ("batch_id", ASCENDING)])
+        self.db.drop_collection(self.STAGING)
+        self.db.drop_collection(self.PARSED)
+        # serves the per-batch malformed count in process_batch()
+        self.db[self.PARSED].create_index([("batch_id", ASCENDING), ("valid", ASCENDING)])
 
     # -- per batch: timed --------------------------------------------------------
     def process_batch(self, batch_id, raw_lines):
@@ -302,13 +301,16 @@ class MongoDBPipeline(BaseETLPipeline):
             [{"run_id": self.run_id, "batch_id": batch_id, "line_no": i, "raw": line}
              for i, line in enumerate(raw_lines)],
             ordered=False)
-        # T: parse inside MongoDB, write to the parsed collection
+        # T: parse inside MongoDB, write to the parsed collection.
+        # whenMatched "fail": staging _ids are fresh ObjectIds so they never
+        # collide; this skips the replace path and is ~2x faster than "replace".
         staging.aggregate(
             build_parse_stages(self.run_id, batch_id) + [
-                {"$merge": {"into": self.PARSED, "whenMatched": "replace",
+                {"$merge": {"into": self.PARSED, "whenMatched": "fail",
                             "whenNotMatched": "insert"}}],
             allowDiskUse=True)
-        staging.delete_many({"run_id": self.run_id, "batch_id": batch_id})
+        # staging holds exactly one batch: dropping it is O(1), delete_many is not
+        staging.drop()
         bad = self.db[self.PARSED].count_documents(
             {"run_id": self.run_id, "valid": False, "batch_id": batch_id})
         self.batch_malformed[batch_id] = bad
